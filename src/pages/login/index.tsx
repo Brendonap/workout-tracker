@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useHistory } from "react-router";
 import Card from "../../components/card";
 import { googleLogin } from "../../firestore";
