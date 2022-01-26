@@ -1,0 +1,13 @@
+@import "./variables";
+
+.app {
+  background: $color-primary-dark;
+  min-height: 100vh;
+  color: $color-neutral;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}

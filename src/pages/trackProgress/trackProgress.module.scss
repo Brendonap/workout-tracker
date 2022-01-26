@@ -1,0 +1,30 @@
+@import "../../assets/styles/variables";
+
+.container {
+  display: grid;
+  padding: 0.5rem;
+  max-width: 700px;
+  margin: auto;
+  grid-gap: 1rem;
+
+  .card-container {
+    display: grid;
+    gap: 1rem;
+
+    .input-container {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      padding-bottom: 0.5rem;
+      grid-gap: 0.5rem;
+    }
+  }
+
+  .history-card {
+    min-height: 300px;
+
+    .chart-placeholder {
+      @include chartPlaceholder;
+    }
+  }
+}

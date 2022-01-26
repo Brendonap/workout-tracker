@@ -1,0 +1,30 @@
+@import "../../assets/styles/variables";
+
+.container {
+  padding: 0.5rem;
+  max-width: 700px;
+  margin: auto;
+
+  .data-loading {
+    @include loadingContainer;
+    margin-top: 10%;
+  }
+
+  .card {
+    min-height: 300px;
+
+    .card-container {
+      display: grid;
+      grid-gap: 1.5rem;
+
+      .chart-placeholder {
+        @include chartPlaceholder;
+      }
+    }
+  }
+}
+
+.chart-container {
+  width: calc(100vw-100px);
+  height: 400px;
+}

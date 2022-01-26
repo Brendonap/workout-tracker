@@ -1,0 +1,9 @@
+@import "../../assets/styles/variables";
+
+.input {
+  border: 1px solid $color-neutral;
+  border-radius: $default-border-radius;
+  width: 100%;
+  min-height: 28px;
+  text-indent: 0.5rem;
+}

@@ -1,0 +1,70 @@
+@import "../../assets/styles/variables";
+
+.exercise {
+  display: grid;
+  grid-gap: 1rem;
+}
+
+.sets-container {
+  display: grid;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  .sets-heading {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    padding-right: 32px;
+    border-bottom: 1px solid $color-secondary;
+    padding-bottom: 0.25rem;
+  }
+}
+
+.action-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-gap: 1rem;
+
+  .action-container-select {
+    width: 100%;
+  }
+
+  .add-remove-exercise {
+    display: flex;
+    & > button {
+      background-color: transparent;
+      font-size: 20px;
+      border: none;
+    }
+    .add {
+      color: $color-accept;
+    }
+
+    .remove {
+      color: $color-error;
+    }
+  }
+}
+
+.set {
+  display: grid;
+  grid-template-columns: 1fr 32px;
+  align-items: center;
+  grid-gap: 0.5rem;
+
+  .input-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  & > button {
+    display: flex;
+    border: none;
+    font-size: 20px;
+    color: $color-error;
+    background-color: transparent;
+    max-width: 32px;
+  }
+}

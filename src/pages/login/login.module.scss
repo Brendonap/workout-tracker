@@ -1,0 +1,39 @@
+@import "../../assets/styles/variables";
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+
+  .login-container {
+    display: grid;
+    grid-template-rows: 200px 1fr;
+
+    & h1 {
+      align-self: center;
+      justify-self: center;
+      color: $color-secondary;
+    }
+
+    .login-card {
+      width: 300px;
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      grid-gap: 3rem;
+
+      & > h2 {
+        color: $color-secondary-light;
+      }
+
+      & > button {
+        display: flex;
+        grid-gap: 0.5rem;
+        cursor: pointer;
+      }
+    }
+  }
+}

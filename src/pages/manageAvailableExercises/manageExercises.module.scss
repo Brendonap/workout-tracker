@@ -1,0 +1,33 @@
+.container {
+  display: grid;
+  grid-gap: 0.5rem;
+  padding: 0.5rem;
+  max-width: 700px;
+  margin: auto;
+
+  .card {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .add-new-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-gap: 1rem;
+    width: 100%;
+  }
+}
+
+.available-excersie-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-top: 0.5rem;
+
+  .available-excersie-list-item {
+    display: flex;
+    justify-content: space-between;
+  }
+}

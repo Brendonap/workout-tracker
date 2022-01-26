@@ -1,5 +1,5 @@
 {
-  "short_name": "React App",
+  "short_name": "Workout",
   "name": "Create React App Sample",
   "icons": [
     {
@@ -19,6 +19,7 @@
     }
   ],
   "start_url": ".",
+  "orientation": "portrait",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"

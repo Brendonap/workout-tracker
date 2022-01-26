@@ -1,0 +1,17 @@
+@import "../../assets/styles/variables";
+
+.select {
+  height: 32px;
+  //   width: 180px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid $color-secondary;
+  //   border-radius: $default-border-radius;
+  background-color: transparent;
+  color: $color-neutral;
+
+  &:focus-visible {
+    outline: none;
+    border-bottom: 1px solid $color-secondary-dark;
+  }
+}

@@ -1,0 +1,13 @@
+@import "../../assets/styles/variables";
+
+.card {
+  border: 1px solid $color-primary;
+  background-color: $color-primary-light;
+  min-height: 40px;
+  padding: 0.5rem;
+  border-radius: $default-border-radius;
+
+  .loading {
+    @include loadingContainer;
+  }
+}

@@ -1,0 +1,63 @@
+$color-primary: hsl(0, 0%, 20%);
+$color-primary-light: hsl(0, 0%, 30%);
+$color-primary-dark: hsl(0, 0%, 10%);
+
+$color-secondary: hsl(47, 100%, 65%);
+$color-secondary-light: hsl(47, 100%, 80%);
+$color-secondary-dark: hsl(47, 100%, 50%);
+
+$color-neutral: hsl(0, 3%, 85%);
+$color-neutral-light: hsl(0, 3%, 95%);
+$color-neutral-dark: hsl(0, 3%, 65%);
+
+$color-error: hsl(0, 99%, 71%);
+$color-accept: hsl(119, 99%, 71%);
+
+$default-border-radius: 8px;
+
+$breakpoints: (
+  "small": 767px,
+  "medium": 992px,
+  "large": 1200px,
+) !default;
+
+@mixin breakpoint($breakpoint) {
+  // If the key exists in the map
+  @if map-has-key($breakpoints, $breakpoint) {
+    // Prints a media query based on the value
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  }
+
+  // If the key doesn't exist in the map
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Available breakpoints are: #{map-keys($breakpoints)}.";
+  }
+}
+
+@mixin loadingContainer() {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 15%;
+}
+
+@mixin chartPlaceholder {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 88px;
+  color: $color-secondary;
+
+  & > span {
+    font-size: 18px;
+    text-align: center;
+  }
+}
