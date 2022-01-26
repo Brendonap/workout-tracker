@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./assets/styles/App.scss";
 import Home from "./pages/home";

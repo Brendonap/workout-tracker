@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from "react";
 import { useHistory } from "react-router";
 import Card from "../../components/card";
@@ -10,12 +11,12 @@ import Button from "../../components/button";
 
 const Login = () => {
   const { state, dispatch } = useAppState();
-  const [isLoading, setIsloading] = useState(false);
+  //   const [isLoading, setIsloading] = useState(false);
   const history = useHistory();
 
   const handleLogin = async () => {
     try {
-      setIsloading(true);
+      //   setIsloading(true);
       const res = await googleLogin();
 
       if (res?.token) {
@@ -31,7 +32,7 @@ const Login = () => {
     } catch (e) {
       console.error(e);
     } finally {
-      setIsloading(false);
+      //   setIsloading(false);
     }
   };
 
