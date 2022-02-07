@@ -13,12 +13,7 @@ import { CustomLineChartPropTypes } from "../../types";
 const CustomLineChart = ({ data, lines }: CustomLineChartPropTypes) => {
   return (
     <ResponsiveContainer width="100%" height="100%">
-      <LineChart
-        width={730}
-        height={250}
-        data={data}
-        //   margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
-      >
+      <LineChart width={730} height={250} data={data}>
         <CartesianGrid strokeDasharray="1 1" />
         <XAxis dataKey="name" />
         <YAxis width={40} />

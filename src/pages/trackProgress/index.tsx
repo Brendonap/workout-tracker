@@ -27,7 +27,7 @@ const TrackProgress = () => {
     },
   ];
 
-  const [progressValue, setProgressValue] = useState<number | null>(0);
+  const [progressValue, setProgressValue] = useState<string | number>();
   const [selectValue, setSelectValue] = useState<string>(
     progressOptions[0].value
   );
@@ -43,9 +43,7 @@ const TrackProgress = () => {
   const handleChangeProgressValue = (
     event: React.ChangeEvent<HTMLInputElement>
   ) => {
-    if (!isNaN(+event.target.value)) {
-      setProgressValue(+event.target.value);
-    }
+    setProgressValue(event.target.value);
   };
 
   const submitProgress = async () => {
